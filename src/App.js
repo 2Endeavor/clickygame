@@ -3,9 +3,8 @@ import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./friends.json";
-//import counter from "./components/counter";
 
-// TODO: make sure the counter component is correctly added
+
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -17,13 +16,6 @@ class App extends Component {
 
   };
 
-  // removeFriend = id => {
-  //   // Filter this.state.friends for friends with an id not equal to the id being removed
-  //   const friends = this.state.friends.filter(friend => friend.id !== id);
-  //   // Set this.state.friends equal to the new friends array
-  //   this.setState({ friends });
-  // };
-
   // shuffle code inspired by @BetonMAN
   ShuffleCharacters = () => {
     const shuffleArray = this.state.friends
@@ -34,7 +26,6 @@ class App extends Component {
    
   };
 
-  // TODO: Increment Score when a photo is clicked on for the first time. Set score to zero if the card is clicked on 2x
 
     // handleIncrement increases this.state.count by 1
     handleIncrement = () => {
@@ -59,24 +50,10 @@ class App extends Component {
     }else{
       this.setState({status: "Game over!",
                     score: 0,
-                      selections: []
+                    selections: []
                      })
-      
-
     }
-    // if image is not in the array, tell user the game is over and reset game and tell them to try again
-    // else the id isn't part of the array tell user that is correct and increment the score and shuffle the array, push id into the array
-    
-  
   }
-
-  // TODO: Give the user a status- "You Guessed Correctly" or "You Guessed Incorrectly". status can be added to state
-
-  // Filter this.state.friends for friends with an id not equal to the id being removed
-  //   const friends = this.state.friends.filter(friend => friend.id !== id);
-  //   // Set this.state.friends equal to the new friends array
-  //   this.setState({ friends });
-  // };
 
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
@@ -105,8 +82,7 @@ class App extends Component {
                 key={theForce.id}
                 name={theForce.name}
                 image={theForce.image}
-                // occupation={friend.occupation}
-                // location={friend.location}
+
               />
             ))}
           </div>
