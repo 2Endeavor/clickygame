@@ -42,7 +42,7 @@ class App extends Component {
       imageArray.push(id);
       this.setState({ selections: imageArray });
     } else {
-      this.setState({ status: "Game over!", score: 0, selections: [] });
+      this.setState({ status: "Game Over", score: 0, selections: [] });
     }
   };
 
