@@ -2,14 +2,14 @@
   {
     "id": 1,
     "name": "Luke Skywalker",
-    "image": "https://binged.it/2ZQg3nL",
+    "image": "https://bit.ly/2TEuvNl",
     "occupation": "Fry Cook",
     "location": "A Pineapple Under the Sea"
   },
   {
     "id": 2,
-    "name": "Rey",
-    "image": "https://bit.ly/2TrA4yE",
+    "name": "Leia",
+    "image": "https://bit.ly/2KD4ATz",
     "occupation": "Restaurant Owner",
     "location": "A Giant Anchor"
   },
@@ -23,7 +23,7 @@
   {
     "id": 4,
     "name": "Obi-Wan",
-    "image": "https://bit.ly/1EKlzbD",
+    "image": "https://bit.ly/2KKDJDM",
     "occupation": "Boy Genius",
     "location": "A Secret Laboratory"
   },
@@ -72,7 +72,7 @@
   {
     "id": 11,
     "name": "Owen Lars",
-    "image": "https://bit.ly/2yRVs6E",
+    "image": "https://bit.ly/2UP67N0",
     "occupation": "Superhero",
     "location": "Earth"
   },
