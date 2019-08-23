@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import StarWarsCard from "./components/StarWarsCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import friends from "./friends.json";
+import friendAndFoe from "./friendAndFoe.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.friendAndFoe to the friendAndFoe json array
   state = {
-    friends,
+    friendAndFoe,
     score: 0,
     selections: [],
     status: ""
@@ -15,11 +15,11 @@ class App extends Component {
 
   // shuffle code inspired by @BetonMAN
   ShuffleCharacters = () => {
-    const shuffleArray = this.state.friends
+    const shuffleArray = this.state.friendAndFoe
       .map(a => [Math.random(), a])
       .sort((a, b) => a[0] - b[0])
       .map(a => a[1]);
-    this.setState({ friends: shuffleArray });
+    this.setState({ friendAndFoe: shuffleArray });
   };
 
   // handleIncrement increases this.state.count by 1
@@ -54,8 +54,8 @@ class App extends Component {
 
         <p className="lead">{this.state.status}</p>
         <Wrapper>
-          {this.state.friends.map(theForce => (
-            <FriendCard
+          {this.state.friendAndFoe.map(theForce => (
+            <StarWarsCard
               imageFunction={this.handleImageClick}
               id={theForce.id}
               key={theForce.id}

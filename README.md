@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This app is started by typing NPM Start at the command line
+This app can be found at: https://2Endeavor.github.io/clickygame
 
 The player in this game receives a point the first time a card is clicked on. If the player clicks on the same image more than once, the game is over.
 Each time the player clicks on a card, all the cards are reshuffled and displayed in a different order. Each successful click results in a reshuffling of the cards and an increase in score.
